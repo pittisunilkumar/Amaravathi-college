@@ -230,7 +230,16 @@ class Feediscount_model extends MY_Model
     }
 
 
+
+
+
+
     /// i am changing below function
+
+
+
+
+    
     public function deletedisstdapproval($fees_discount_id, $student_session_id)
     {
         $this->db->where('fees_discount_id', $fees_discount_id);
