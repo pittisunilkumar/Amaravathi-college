@@ -173,7 +173,7 @@ class Feediscount extends Admin_Controller
                     'student_session_id' => $value,
                     'fees_discount_id'   => $feediscount_id,
                 );
-                $inserted_id = $this->feediscount_model->allotdiscount($insert_array);
+                $inserted_id = $this->feediscount_model->allotdiscountapproval($insert_array);
                 $preserve_record[] = $inserted_id;
             }
             if (!empty($diff_aray)) {
