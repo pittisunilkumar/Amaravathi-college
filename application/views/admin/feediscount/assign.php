@@ -98,7 +98,7 @@ $currency_symbol = $this->customlib->getSchoolCurrencyFormat();
                             </div>
                         </form>
                     </div>
-                    <form method="post" action="<?php echo site_url('admin/feediscount/studentdiscountapproval') ?>" id="assign_form">
+                    <form method="post" action="<?php echo site_url('admin/feediscount/studentdiscount') ?>" id="assign_form">
 
                         <?php
                         if (isset($resultlist)) {
