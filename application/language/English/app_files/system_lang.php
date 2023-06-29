@@ -2355,4 +2355,7 @@ $lang['fee_due'] = "Fee Due";
 
 
 
+$lang['student_fee_group']="Fee Type";
+
+
 
