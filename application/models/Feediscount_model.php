@@ -288,6 +288,52 @@ class Feediscount_model extends MY_Model
 
 
 
+    
+    public function getfeegroups($student_id){
+
+        // $this->db->select('student_fees_master.fee_session_group_id ,student_fees_master.id ,fee_groups.name,feetype.id AS `feetypeid`,feetype.type')->from('student_fees_master');
+        // $this->db->join('fee_groups','fee_groups.id=student_fees_master.fee_session_group_id');
+        // $this->db->join('fee_groups_feetype','fee_groups_feetype.fee_groups_id=student_fees_master.fee_session_group_id');
+        // $this->db->join('feetype', 'feetype.id = fee_groups_feetype.feetype_id');
+        // $this->db->where('student_fees_master.student_session_id',$student_id);
+        // $query = $this->db->get();
+        // return $query->result_array();
+        
+        
+        $this->db->select('student_fees_master.fee_session_group_id ,student_fees_master.id ,fee_groups.name,feetype.id AS `feetypeid`,feetype.type')->from('student_fees_master');
+        $this->db->join('fee_groups','fee_groups.id=student_fees_master.fee_session_group_id');
+        $this->db->join('fee_groups_feetype','student_fees_master.fee_session_group_id=fee_groups_feetype.fee_groups_id');
+        $this->db->join('feetype', 'feetype.id = fee_groups_feetype.feetype_id');
+        $this->db->where('student_fees_master.student_session_id',$student_id);
+        $query = $this->db->get();
+        return $query->result_array();
+
+
+        
+    }
+
+
+    public function getfeetypeid($student_id,$feetypeid){
+        $this->db->select('student_fees_master.fee_session_group_id,student_fees_master.id,fee_groups.name,feetype.id AS `feetypeid`,feetype.type')->from('student_fees_master');
+        $this->db->join('fee_groups','fee_groups.id=student_fees_master.fee_session_group_id');
+        $this->db->join('fee_groups_feetype','fee_groups_feetype.fee_groups_id=student_fees_master.fee_session_group_id');
+        $this->db->join('feetype', 'feetype.id = fee_groups_feetype.feetype_id');
+        $this->db->where('feetype.id',$feetypeid);
+        $this->db->where('student_fees_master.student_session_id',$student_id);
+        $query = $this->db->get();
+        return $query->row_array();  
+    }
+
+    public function getfeeamount($discountid){
+        $this->db->select('fees_discounts.id,fees_discounts.name,fees_discounts.amount')->from('fees_discounts');
+        $this->db->where('fees_discounts.id',$discountid);
+        $query = $this->db->get();
+        return $query->row_array();
+    }
+
+
+
+
 
 
 }
