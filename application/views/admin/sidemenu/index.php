@@ -1,4 +1,3 @@
-
 <style type="text/css">
 
 .well-list {
@@ -196,7 +195,7 @@ if ($this->rbac->hasPrivilege('expense', 'can_add')) {
 </div>
 
 <!-- Modal -->
-<div id="submenuModal" role="dialog">
+<div id="submenuModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <!-- Modal content-->
     <div class="modal-content">
