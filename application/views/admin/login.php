@@ -125,12 +125,6 @@
                                         <i class="fas fa-sign-in-alt"></i> Login</button>
                                 </div>
 
-
-                                <div class="sign-footer">
-                                    <p>© 2022 Ramom School Management - Developed by RamomCoder</p>
-                                </div>
-
-
                             </form>
                         </div>
                     </div>
