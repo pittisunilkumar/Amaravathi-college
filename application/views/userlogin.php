@@ -125,9 +125,7 @@
                                 </div>
 
 
-                                <div class="sign-footer">
-                                    <p>© 2022 Ramom School Management - Developed by RamomCoder</p>
-                                </div>
+                                
 
 
                             </form>
