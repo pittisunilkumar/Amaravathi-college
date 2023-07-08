@@ -91,9 +91,7 @@
                                 <div class="text-center">
                                     <a href="<?php echo site_url('site/login') ?>"><i class="fas fa-long-arrow-alt-left"></i> Back To Login</a>
                                 </div>
-                                <div class="sign-footer">
-                                    <p>© 2022 Ramom School Management - Developed by RamomCoder</p>
-                                </div>
+                                
                             </form>                        </div>
                     </div>
                 </div>
