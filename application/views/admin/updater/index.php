@@ -87,20 +87,10 @@
                             }
 
 
-                            if (isset($version) && $version != "") {
-                                ?>
-                                <div class="col-md-12 mb10 mt10 upgradeup">
-                                    <!-- <h4><i class="fa fa-info-circle"></i> New version is available for update.</h4> -->
-                                    <form method="POST" action="<?php echo site_url('admin/updater'); ?>" id="form-update">
-                                        <button type="button" class="btn cfees btn-submit" name="update_btn" value="update"> <?php echo $this->lang->line('update_now') ?></button>
-                                    </form>
-                                </div><!--./col-md-12-->
-
-                                <?php
-                            }
+                            
                             ?>
 <div class="font15">
-<?php echo $this->lang->line('please_check') ?> <a href="https://smart-school.in/category/changelog/smart-school" target="_blank" class="displayinline align-text-top font-weight-bold"><?php echo $this->lang->line('changelog') ?></a> <?php echo $this->lang->line('for_latest_version_update') ?> 
+<?php echo $this->lang->line('please_check') ?> <a href="https://crm.cyberdetox.in" target="_blank" class="displayinline align-text-top font-weight-bold"><?php echo $this->lang->line('changelog') ?></a> <?php echo $this->lang->line('for_latest_version_update') ?> 
     
 </div>
                         </div><!--./row-->
