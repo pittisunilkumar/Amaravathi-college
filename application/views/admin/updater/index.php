@@ -100,7 +100,7 @@
                             }
                             ?>
 <div class="font15">
-<?php echo $this->lang->line('please_check') ?> <a href="https://smart-school.in/category/changelog/smart-school" target="_blank" class="displayinline align-text-top font-weight-bold"><?php echo $this->lang->line('changelog') ?></a> <?php echo $this->lang->line('for_latest_version_update') ?> 
+<?php echo $this->lang->line('please_check') ?> <a href="https://www.crm.cyberdetox.in/authentication/login" target="_blank" class="displayinline align-text-top font-weight-bold"><?php echo $this->lang->line('changelog') ?></a> <?php echo $this->lang->line('for_latest_version_update') ?> 
     
 </div>
                         </div><!--./row-->
