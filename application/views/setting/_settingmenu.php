@@ -9,12 +9,12 @@
             </li>
 
 
-            <li class="<?php echo set_SubSubmenu('schsettings/login_page_background'); ?>">
+            <li style="display:none" class="<?php echo set_SubSubmenu('schsettings/login_page_background'); ?>">
                 <a class="<?php echo set_SubSubmenu('schsettings/login_page_background'); ?>" href="<?php echo site_url('schsettings/login_page_background') ?>"><?php echo $this->lang->line('login_page_background'); ?></a>
             </li> 
             
             
-            <li class="<?php echo set_SubSubmenu('schsettings/backendtheme'); ?>">
+            <li style="display:none" class="<?php echo set_SubSubmenu('schsettings/backendtheme'); ?>">
                 <a class="<?php echo set_SubSubmenu('schsettings/backendtheme'); ?>" href="<?php echo site_url('schsettings/backendtheme') ?>"><?php echo $this->lang->line('backend_theme'); ?></a>
             </li>
             <li class="<?php echo set_SubSubmenu('schsettings/mobileapp'); ?>">
