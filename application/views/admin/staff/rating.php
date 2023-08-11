@@ -12,7 +12,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            <i class="fa fa-calendar-check-o"></i> <?php// echo $this->lang->line('teachers') . " " . $this->lang->line('rating'); ?> <small> </small></h1>
+            <i class="fa fa-calendar-check-o"></i> <?php echo $this->lang->line('teachers') . " " . $this->lang->line('rating'); ?> <small> </small></h1>
     </section>
     <section class="content">
         <div class="row">
